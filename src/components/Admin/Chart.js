@@ -5,7 +5,6 @@ import jsPDF from "jspdf";
 import emailjs from "@emailjs/browser";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/button";
 import { useReactToPrint } from "react-to-print";
 import { useLocation } from "react-router-dom";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
@@ -334,7 +333,7 @@ const navigate = useNavigate()
           </Form.Group>
         </Modal.Body>
         <Modal.Footer>
-          <Button
+          <button
           style={{backgroundColor:"#111359",marginTop:"-7px"}}
             variant="primary"
             type="submit"
@@ -345,7 +344,7 @@ const navigate = useNavigate()
             }}
           >
             Send Email
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
     </div>
